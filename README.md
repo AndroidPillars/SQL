@@ -95,6 +95,16 @@ SELECT column_name FROM TableName ORDER BY column_name DESC
 
 ```ruby
 SELECT column_name FROM TableName ORDER BY column_name1 DESC, column_name2 ASC
+```  
+
+## LIMIT
+
+- The LIMIT command allows us to limit the number of rows returned for a Query.
+
+__Example__
+
+```ruby
+SELECT column_name FROM TableName LIMIT Numbers
 ```
 
 ## Need to Know
