@@ -107,6 +107,27 @@ __Example__
 SELECT column_name FROM TableName LIMIT Numbers
 ```
 
+## BETWEEN
+
+- The BETWEEN Operator can be used to match a value against a range of Values (i.e.) Value BETWEEN Low AND High.
+- It similar to that of Value >= Low AND Value <= High.
+- We can also combine BETWEEN with the NOT Logical Operator (i.e.) Value NOT BETWEEN Low AND High.
+- It similar to that of Value < Low AND Value > High.
+
+__Example__
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name BETWEEN Value1 AND Value2;
+```
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name NOT BETWEEN Value1 AND Value2;
+```  
+
+__Note__
+
+- The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31
+
 ## Need to Know
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
