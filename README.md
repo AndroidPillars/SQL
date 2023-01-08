@@ -170,7 +170,22 @@ SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
 
 __Note__
 
-- We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive
+- We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive  
+
+## Aggregation Function
+
+- SQL provides a variety of Aggregation Function.
+- The main idea of aggregate function is to take multiple inputs and return a single o/p.
+- The most common aggregate functions are listed below,
+- AVG() -> Returns a Average Value.
+- COUNT() -> Returns a number of Values.
+- MAX() -> Returns a maximum Value.
+- MIN() -> Returns a minimum Value.
+- SUM() -> Returns sum of All Values. 
+
+__Note__
+
+- The aggregate
 
 ## Need to Know
 
