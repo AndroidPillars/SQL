@@ -126,7 +126,51 @@ SELECT column_name FROM TableName WHERE column_name NOT BETWEEN Value1 AND Value
 
 __Note__
 
-- The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31
+- The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31  
+
+## IN
+
+- We can use the IN operator to create a conditions that checks to see if a Value is included in a List of Multiple Options.
+- For Example, If a user name shows up in a List of known Names (i.e.) Value IN (Option1, Option2,...,Option_n).
+
+__Example__
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name IN (Option1, Option2,..., Option_n);
+```
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name NOT IN (Option1, Option2,..., Option_n);
+```
+
+## LIKE and ILIKE
+
+- The LIKE Operator can used for Pattern Matching with string data.
+- For Example, If we want to match against a general pattern in String (i.e.) Mails ending with '@gmail.com' and Names begin with 'A'
+- It also allows us to perform pattern matching against String data with the use of Wild Characters (i.e.) 
+- Percent(%) which matches any sequence of characters and UnderScore(_) which matches any single Character.   
+
+__Example__
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name LIKE 'value%'
+```  
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name LIKE '%value'
+```  
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name LIKE '%value%'
+```  
+
+```ruby
+SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
+```
+
+__Note__
+
+- We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive
 
 ## Need to Know
 
