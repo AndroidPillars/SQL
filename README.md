@@ -185,7 +185,43 @@ __Note__
 
 __Note__
 
-- The aggregate
+- The aggregate function call can happen only in the SELECT Clause or the HAVING Clause.
+- Where the AVG() returns the floating value and you can use ROUND() to specify precision after the decimal.
+- Where the COUNT() simply returns the number of rows, which means by convention we just use COUNT(*).
+
+__Example__
+
+```ruby
+SELECT MIN(column_name) FROM TableName
+```
+
+```ruby
+SELECT MAX(column_name) FROM TableName
+```
+
+```ruby
+SELECT MAX(column_name) FROM TableName
+``` 
+
+```ruby
+SELECT MIN(column_name1), MAX(column_name2) FROM TableName
+``` 
+
+```ruby
+SELECT COUNT(*) FROM TableName
+```
+
+```ruby
+SELECT AVG(CustomerID) FROM TableName
+```
+
+```ruby
+SELECT ROUND(AVG(CustomerID), 2) FROM TableName
+```  
+
+```ruby
+SELECT SUM(column_name) FROM TableName
+```
 
 ## Need to Know
 
