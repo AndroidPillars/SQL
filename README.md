@@ -288,6 +288,22 @@ SELECT AGG(data_column) as new_name FROM TableName
 - JOIN allows us to combine informations from multiple Table.
 - Different kinds of JOINs -> Inner JOINS, OUTER JOINS, FULL JOINS and UNION
 
+## INNER JOIN
+
+- The Inner Join will result the set of records that matches in both the Tables.
+
+__NOTE__
+
+- Default JOIN will be considered to be INNER JOIN
+
+__Example__
+
+```ruby
+SELECT column_name 
+FROM TableNameOne
+INNER JOIN TableNameTwo on TableNameOne.column_matches = TableNameTwo.column_matches
+```
+
 ## Need to Know
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
