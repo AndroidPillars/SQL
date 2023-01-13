@@ -266,7 +266,27 @@ FROM TableName
 GROUP BY category_column_1, category_column_2
 HAVING AGG(data_column) > value
 ORDER BY category_column_1
+```  
+
+## AS
+
+- As clause allows us to create "alias" for a column or result.
+- The AS Operator gets executed at the very end of a Query (i.e.) we cannot use inside the WHERE Operator.
+
+__Example__
+
+```ruby
+SELECT column_name as new_name FROM TableName
 ```
+
+```ruby
+SELECT AGG(data_column) as new_name FROM TableName
+```
+
+## JOIN
+
+- JOIN allows us to combine informations from multiple Table.
+- Different kinds of JOINs -> Inner JOINS, OUTER JOINS, FULL JOINS and UNION
 
 ## Need to Know
 
