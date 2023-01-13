@@ -221,6 +221,51 @@ SELECT ROUND(AVG(CustomerID), 2) FROM TableName
 
 ```ruby
 SELECT SUM(column_name) FROM TableName
+```  
+
+## GROUP BY
+
+- GROUP BY allows us to aggregate columns per some category.
+
+__NOTE__
+
+- We need to choose categorical column to GROUP BY.
+- The categorical Columns are non-continious.
+- The GROUP BY clause must appear right after a FROM or WHERE statement.
+- In the SELECT statement, columns must have an aggregate function or be in the GROUP By call.
+- WHERE statement should not refer to the aggregation result.
+- If we want to sort results based on the aggregate function, make sure to reference the entire function (i.e.) for ORDER BY. 
+
+__Example__
+
+```ruby
+SELECT category_column, AGG(data_column) FROM TableName GROUP BY category_column
+```  
+
+```ruby
+SELECT category_column, AGG(data_column) FROM TableName WHERE column_name GROUP BY category_column
+```
+
+```ruby
+SELECT CategoryID, SUM(Price) FROM TableName
+GROUP BY CategoryID
+ORDER BY SUM(PRICE)
+LIMIT Number
+```  
+
+## HAVING
+
+- The Havings clause allows us to filter after an aggregation has already taken place (i.e.) it comes after the GROUP BY call.
+- We cannot use WHERE to filter based on aggregate results, because those happened after a WHERE is executed.
+
+__Example__
+
+```ruby
+SELECT category_column_1, category_column_2, AGG(data_column) 
+FROM TableName 
+GROUP BY category_column_1, category_column_2
+HAVING AGG(data_column) > value
+ORDER BY category_column_1
 ```
 
 ## Need to Know
