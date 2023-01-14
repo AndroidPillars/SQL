@@ -433,8 +433,30 @@ __NOTE__
 - PRIMARY KEY uniquely identifies each row/record in a database table.
 - FOREIGN KEY Constraints data based on columns in other Table.
 - CHECK Constraint ensures that all values in a column satisfy certain conditions.
-- Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.
+- Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.  
 
+## INSERT
+
+- Insert allows us to add Rows in a Table.
+- We can also insert values from Another Table.
+
+__NOTE__
+
+- The inserted row values must match up for the table including constraints.
+- SERIAL columns do not need to be provided a value (i.e.) since it's a sequence it will automatically update the next available integer for that row.
+
+__Example__
+
+```ruby
+INSERT INTO TableName(column1, column2,...) VALUES (value1, value2,...)
+```
+
+```ruby
+INSERT INTO  TableName(column1, column2,...) 
+SELECT column1, column2,...
+FROM another_table 
+WHERE condition;
+```
 
 ## Need to Know
 
