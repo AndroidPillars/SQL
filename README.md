@@ -302,6 +302,83 @@ __Example__
 SELECT column_name 
 FROM TableNameOne
 INNER JOIN TableNameTwo on TableNameOne.column_matches = TableNameTwo.column_matches
+```  
+
+## FULL OUTER JOIN
+
+- This will allow us to specify how to deal with values present in both the Tables being Joined.
+
+__Example__
+
+```ruby
+SELECT column_name 
+FROM TableNameOne
+FULL OUTER JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+```  
+
+```ruby
+SELECT column_name 
+FROM TableNameOne
+FULL OUTER JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+WHERE TableNameOne.column_matches IS NULL 
+OR TableNameTwo.id IS NULL 
+```
+
+## LEFT OUTER JOIN (or) LEFT JOIN
+
+- This LEFT JOIN results in the set of records that are in the LEFT Table, if there is no match with the Right Table, then the results are null.
+
+__Example__
+
+```ruby
+SELECT column_name 
+FROM TableNameOne
+LEFT OUTER JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+```
+
+```ruby
+SELECT TableNameOne.column_name 
+FROM TableNameOne
+LEFT OUTER JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+WHERE TableNameTwo.id IS NULL
+```  
+
+## RIGHT OUTER JOIN (or) RIGHT JOIN
+
+- This RIGHT JOIN results in the set of records that are in the Right Table, if there is no match with the Left Table, then the results are null.  
+
+__Example__
+
+```ruby
+SELECT column_name 
+FROM TableNameOne
+RIGHT JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+```
+
+```ruby
+SELECT TableNameOne.column_name 
+FROM TableNameOne
+RIGHT JOIN TableNameTwo 
+on TableNameOne.column_matches = TableNameTwo.column_matches
+WHERE TableNameOne.id IS NULL
+```  
+
+## UNION
+
+- The UNION operator is used to combine the results of Two (or) More SELECT Statements.
+- It bascially serves to directly concatenate two results together.
+
+__Example__
+
+```ruby
+SELECT column_name FROM TableNameOne
+UNION
+SELECT column_name FROM TableNameTwo
 ```
 
 ## Need to Know
