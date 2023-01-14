@@ -17,7 +17,7 @@ Getting started with SQL
 - SELECT is the most common statement used to retrieve informations from a Table.
 - In General, it is not a good practice to use asterik(*) in SELECT Statement unless we need all Columns (i.e.)
 - It will automatically query everything which increases the traffic b/w the Database Server and the Application which can slow down the retrieval of Results.
-- The Semicolon is to denote the end of a Query.
+- The Semicolon is to denote the end of a Query but it is not mandatory.
 
 __Example__
 
@@ -26,12 +26,12 @@ SELECT * FROM TableName;
 ```
 
 ```ruby
-SELECT column_name FROM TableName;
+SELECT column_name FROM TableName; 
 ```  
 
 ## DISTINCT
 
-- The DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
+- DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
 - The DISTINCT of a Column works with or without parenthesis.
 
 __Example__
@@ -48,7 +48,7 @@ SELECT DISTINCT(column_name) FROM TableName;
 
 - The COUNT Function returns the number of input rows that matches a specific condition of a Query.
 - We can apply COUNT on a specific column or just pass COUNT(*) to retrive the returned result.
-- The COUNT will works only with the parenthesis (i.e.) it's a function acting on something.
+- The COUNT will works only with the parenthesis (i.e.) it is just a function which acts on something.
 
 __Example__
 
@@ -66,7 +66,7 @@ SELECT COUNT(DISTINCT(column_name)) FROM TableName;
 
 ## WHERE
 
-- The WHERE Statement allows us to specify conditions on columns for the rows to be returned.  
+- WHERE Statement allows us to specify conditions on columns for the rows to be returned.  
 - The Conditions are used to filter the rows returned from the SELECT Statement.
 
 __Example__
@@ -419,6 +419,11 @@ __NOTE__
 - Two Categories -> Column Constraints, Table Constraints
 - Column Constraints means contsraint the data in a column to certain conditions.
 - Table Constraints applied to the entire table rather than an to an individual column.
+- Table Constraints will use the following keywords (i.e.) 
+- CHECK (Condition) -  To check a condition when inserting or updating data.
+- REFERENCES - To constraint the value stored in the column that must exist in a column in another Table.
+- UNIQUE (column_list) - Forces the value stored in the Column listed inside the paranthesis to be unique.
+- PRIMARY KEY (column_list) - Allows us to define the primary key that consists of multiple columns.
 
 ## Commonly Used Constraints
 
@@ -429,6 +434,7 @@ __NOTE__
 - FOREIGN KEY Constraints data based on columns in other Table.
 - CHECK Constraint ensures that all values in a column satisfy certain conditions.
 - Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.
+
 
 ## Need to Know
 
