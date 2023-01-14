@@ -3,9 +3,9 @@ Getting started with SQL
 
 ## Databases
 
-- Databases are systems that allow users to store and Organize data.
+- Databases allows users to Store and Organize data.
 - They are useful when dealing with large amount of data.
-- Mainly used by the Data Scientist, Web and Mobile App Developers.
+- It is Mainly used by the Data Scientist, Web and Mobile App Developers.
 
 ## SQL
 
