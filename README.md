@@ -379,7 +379,56 @@ __Example__
 SELECT column_name FROM TableNameOne
 UNION
 SELECT column_name FROM TableNameTwo
-```
+```  
+
+## Data Types
+
+- Boolean (True or False)
+- Character (char, varchar and text)
+- Numeric (Integer and Floating point Number)
+- Temporal (date, time, timestamp and interval)
+- UUID (Universally Unique Identifier) - which is essentially an algorithmically unique code in order to make sure you have an unique identifier for a Particular row.
+- Array - Stores an Array of strings, numbers, etc..
+- JSON
+- Hstore key-value pair
+- Special types such as Network Address and Geometric Data.
+
+## Primary Key
+
+- A Primary Key is a column or a group of columns used to identify a row uniquely and non-nullable in a Table.
+- Primary Key are also important since they allow us to decide which columns should be used for joining tables together.
+
+## Foreign Key
+
+- A Foreign Key is a field or Group of fields in a table that uniquely identifies a row in another table.
+- A Foreign Key is defined in a table that references to the Primary key of other table.
+- The Table that contains the foreign key is called referencing table or child table.
+- The Table to which the foreign key references is called referenced table or Parent table.
+- A Table can have multiple foreign keys depending on its relationship with other tables.
+- For Example, If we take the Payment Table, each payment row has its unique payment_id(a primary key) and the customer that made the payment through the customer_id(a foreign key since it references the customer table's primary key)
+
+__NOTE__
+
+- When creating Tables and defining columns, we can use constraints to define columns as being a primary key, or attaching a foreign key relationship to another table.
+
+## Constraints
+
+- Constraints are the rules enforced on data columns on Table.
+- They are used to prevent invalid data from being entered in to the database.
+- This ensures the accuracy and readibility of the data in the database.
+- Two Categories -> Column Constraints, Table Constraints
+- Column Constraints means contsraint the data in a column to certain conditions.
+- Table Constraints applied to the entire table rather than an to an individual column.
+
+## Commonly Used Constraints
+
+- The most commonly used constraints are listed below.
+- NOT NULL Constraint ensures that a columns cannot have NULL Value.
+- UNIQUE Constraint ensures that all values in a column are different.
+- PRIMARY KEY uniquely identifies each row/record in a database table.
+- FOREIGN KEY Constraints data based on columns in other Table.
+- CHECK Constraint ensures that all values in a column satisfy certain conditions.
+- Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.
 
 ## Need to Know
 
