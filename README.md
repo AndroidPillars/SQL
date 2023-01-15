@@ -456,6 +456,42 @@ INSERT INTO  TableName(column1, column2,...)
 SELECT column1, column2,...
 FROM another_table 
 WHERE condition;
+```  
+
+## UPDATE
+
+- The UPDATE keyword allows us to change the value of the Columns in a Table.
+
+__Example__
+
+```ruby
+UPDATE TableName
+SET column1 = value1, column2 = value2,...
+WHERE condition;
+```
+
+```ruby
+UPDATE TableName
+SET column1 = value1
+WHERE column1 IS NULL;
+```
+
+```ruby
+UPDATE TableName
+SET column1 = column2
+```
+
+```ruby
+UPDATE TableA
+SET column1 = TableB.value1
+FROM TableB
+WHERE TableA.id = TableB.id;
+```  
+
+```ruby
+UPDATE TableName
+SET column1 = column2
+RETURNING table_id, table_name
 ```
 
 ## Need to Know
