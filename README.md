@@ -492,7 +492,42 @@ WHERE TableA.id = TableB.id;
 UPDATE TableName
 SET column1 = column2
 RETURNING table_id, table_name
-```
+```  
+
+## DELETE
+
+- We can use the DELETE clause to remove rows from a Table (Refer Example 1).
+- We can delte rows based on their presence in other Tables (Refer Example 2).
+- We can also all rows from a Table (Refer Example 3).
+- Similar to UPDATE command, We can also add in a RETURNING call to return rows that were removed (Refer Example 4).
+
+__Example 1__
+
+```ruby
+DELETE FROM TableName 
+WHERE condition
+```  
+
+__Example 2__
+
+```ruby
+DELETE FROM TableNameA
+USING TableNameB
+WHERE condition TableNameA.id = TableNameA.id
+```  
+
+__Example 3__
+
+```ruby
+DELETE FROM TableName 
+``` 
+__Example 4__
+
+```ruby
+DELETE TableName
+WHERE column_name = "Enter Name or value"
+RETURNING column_name1, column_name2
+```  
 
 ## Need to Know
 
