@@ -529,6 +529,57 @@ WHERE column_name = "Enter Name or value"
 RETURNING column_name1, column_name2
 ```  
 
+## ALTER
+
+- The ALTER Clause allows for changes to an existing Table Structure Such as
+- Adding, Droping or Renaming Columns.
+- Changing a Column Data Type.
+- Set Default values for a Column.
+- Adding CHECK Constraints.
+- Rename Table.
+
+__Example 1 (General Syntax)__
+
+```ruby
+ALTER TABLE table_name action;
+```
+
+__Example 2 (Adding New Column)__
+
+```ruby
+ALTER TABLE table_name
+ADD COLUMN new_column_name TYPE;
+```  
+
+__Example 3 (Removing Column)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN column_name;
+``` 
+
+__Example 4 (Renaming Table Name)__
+
+```ruby
+ALTER TABLE table_name
+RENAME TO new_table_name;
+``` 
+
+__Example 5 (Renaming Column)__
+
+```ruby
+ALTER TABLE table_name
+RENAME COLUMN column_name TO new_column_name;
+``` 
+
+__Example 6 (Alter Constraints)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN column_name 
+SET DEFAULT value || DROP DEFAULT || SET NOT NULL || DROP NOT NULL || ADD CONSTRAINT constraint_name;
+```
+
 ## Need to Know
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
