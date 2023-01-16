@@ -617,6 +617,24 @@ __Example 4 (Drop Multiple Columns)__
 ALTER TABLE table_name
 DROP COLUMN column_name_one,
 DROP COLUMN column_name_two;
+```  
+
+## CHECK Constarint
+
+- The CHECK Constraint allows us to create more customized constraints that adhere to a certain condition.
+- Such as making sure all inserted integer values fall below a certain threshold.
+
+__Example__
+
+```ruby
+CREATE TABLE TableName(
+column_id SERIAL PRIMARY KEY,
+column_name_one VARCHAR(50) NOT NULL,
+column_name_two VARCHAR(50) NOT NULL,
+column_name_three DATE CHECK (column_name_three > condition),
+column_name_four DATE CHECK (column_name_four > column_name_three),
+column_name_five INTEGER CHECK (column_name_five > 0)
+);
 ```
 
 ## Need to Know
