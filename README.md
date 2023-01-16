@@ -580,6 +580,45 @@ DROP COLUMN column_name
 SET DEFAULT value || DROP DEFAULT || SET NOT NULL || DROP NOT NULL || ADD CONSTRAINT constraint_name;
 ```
 
+## DROP
+
+- DROP removes for the complete removal of a column in a Table.
+- This will also automatically remove all of it's indexes and constraints involving in the column.
+
+__NOTE__
+
+- However, it will not remove columns used in views, triggers, or stored procedures without the additional CASCADE clause. 
+
+__Example 1 (General Syntax)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN column_name;
+```
+
+__Example 2 (To Remove all Dependencies)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN column_name CASCADE; 
+```
+
+
+__Example 3 (Check existence to Avoid Error)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN IF EXISTS column_name; 
+```  
+
+__Example 4 (Drop Multiple Columns)__
+
+```ruby
+ALTER TABLE table_name
+DROP COLUMN column_name_one,
+DROP COLUMN column_name_two;
+```
+
 ## Need to Know
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
