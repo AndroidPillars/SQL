@@ -13,6 +13,7 @@
 | 9 | [BETWEEN](README.md#between) |  
 | 10 | [IN](README.md#in) |  
 | 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
+| 12 | [Aggregation Function](README.md#aggregation-function) |  
 
 
 ## Databases
@@ -234,8 +235,8 @@ SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
 ## Aggregation Function
 
 - SQL provides a variety of Aggregation Function.
-- The main idea of aggregate function is to take multiple inputs and return a single o/p.
-- The most common aggregate functions are listed below,
+- The main idea of aggregate function is to take multiple inputs and return a single output.
+- The most common aggregate functions are AVG(), COUNT(), MAX(), MIN() and SUM().
 - AVG() -> Returns a Average Value.
 - COUNT() -> Returns a number of Values.
 - MAX() -> Returns a maximum Value.
@@ -248,39 +249,52 @@ __Note__
 - Where the AVG() returns the floating value and you can use ROUND() to specify precision after the decimal.
 - Where the COUNT() simply returns the number of rows, which means by convention we just use COUNT(*).
 
-__Example__
+__Example 1 (Returns Minimum Value)__
 
 ```ruby
 SELECT MIN(column_name) FROM TableName
 ```
 
+__Example 2 (Returns Maximum Value)__
+
 ```ruby
 SELECT MAX(column_name) FROM TableName
 ```
 
-```ruby
-SELECT MAX(column_name) FROM TableName
-``` 
+__Example 3 (Returns both Minimum and Maximum Value)__
 
 ```ruby
 SELECT MIN(column_name1), MAX(column_name2) FROM TableName
 ``` 
 
+__Example 4 (Returns count of the Rows)__
+
 ```ruby
 SELECT COUNT(*) FROM TableName
 ```
+
+__Example 5 (Returns Average Values)__
 
 ```ruby
 SELECT AVG(CustomerID) FROM TableName
 ```
 
+
+__Example 6 (For Round Off the Float Values)__
+
 ```ruby
 SELECT ROUND(AVG(CustomerID), 2) FROM TableName
 ```  
 
+
+__Example 7 (Sum the Values)__
+
 ```ruby
 SELECT SUM(column_name) FROM TableName
 ```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 
 ## GROUP BY
 
