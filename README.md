@@ -205,19 +205,25 @@ __Note__
 
 - We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive    
 
-__Example__
+__Example 1 (Searches for the Ending Character)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name LIKE 'value%'
 ```  
 
+__Example 2 (Searches for the Starting Character)__
+
 ```ruby
 SELECT column_name FROM TableName WHERE column_name LIKE '%value'
 ```  
 
+__Example 3 (Searches for the Starting and Ending Character)__
+
 ```ruby
 SELECT column_name FROM TableName WHERE column_name LIKE '%value%'
 ```  
+
+__Example 4 (Searches for the Missing Character)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
