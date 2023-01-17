@@ -42,7 +42,7 @@ __Example 1 (Getting all the Columns)__
 SELECT * FROM TableName;
 ```
 
-__Example 2 (Getting the Specific Columns)__
+__Example 2 (Getting the Specific Column)__
 
 ```ruby
 SELECT column_name FROM TableName; 
