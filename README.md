@@ -273,14 +273,14 @@ __Example 4 (Returns count of the Rows)__
 SELECT COUNT(*) FROM TableName
 ```
 
-__Example 5 (Returns Average Values)__
+__Example 5 (Returns the Average Value)__
 
 ```ruby
 SELECT AVG(CustomerID) FROM TableName
 ```
 
 
-__Example 6 (For Round Off the Float Values)__
+__Example 6 (Round Off the Value)__
 
 ```ruby
 SELECT ROUND(AVG(CustomerID), 2) FROM TableName
