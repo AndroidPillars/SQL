@@ -435,6 +435,43 @@ __NOTE__
 - CHECK Constraint ensures that all values in a column satisfy certain conditions.
 - Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.  
 
+## CREATE
+
+- To create a Table in SQL we need to use CREATE keyword and column syntax.
+
+__Example (General Syntax)__
+
+```ruby
+CREATE TABLE TableName(
+column_name_one TYPE column_constraint,
+column_name_two TYPE column_constraint
+);
+```
+
+## SERAIL (Data Type)
+
+- A Sequence is a special kind of database object that generates a sequence of Integers.
+- It is often used as a primary key column in a Table.
+- If the row is later removed, the column with the SERAIL data type will not adjust (i.e.) 
+- For Example In SERAIL data type 1,2,3 if we removed 2 then it will be like 1,3
+
+__Example 1 (General Syntax)__
+
+```ruby
+CREATE TABLE TableName(
+column_id SERIAL PRIMARY KEY,
+column_age SMALLINT NOT NULL,
+);
+```
+
+__Example 2 (Foreign Key References)__
+
+```ruby
+CREATE TABLE TableName(
+column_id INTEGER REFERENCES ReferedTableName(column_id),
+);
+```
+
 ## INSERT
 
 - Insert allows us to add Rows in a Table.
@@ -445,7 +482,7 @@ __NOTE__
 - The inserted row values must match up for the table including constraints.
 - SERIAL columns do not need to be provided a value (i.e.) since it's a sequence it will automatically update the next available integer for that row.
 
-__Example__
+__Example 1 __
 
 ```ruby
 INSERT INTO TableName(column1, column2,...) VALUES (value1, value2,...)
