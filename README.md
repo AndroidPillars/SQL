@@ -21,9 +21,13 @@
 - They are useful when dealing with large amount of data.
 - It is Mainly used by the Data Scientist, Web and Mobile App Developers.
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## SQL
 
 - SQL (Structured Query Language) is the programming Language used to communicate with our Database.
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## SELECT
 
@@ -42,6 +46,8 @@ SELECT * FROM TableName;
 SELECT column_name FROM TableName; 
 ```  
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## DISTINCT
 
 - DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
@@ -55,7 +61,9 @@ SELECT DISTINCT column_name FROM TableName;
 
 ```ruby
 SELECT DISTINCT(column_name) FROM TableName;
-```
+```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## COUNT
 
@@ -77,6 +85,8 @@ SELECT COUNT(column_name) FROM TableName;
 SELECT COUNT(DISTINCT(column_name)) FROM TableName;
 ```  
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## WHERE
 
 - WHERE Statement allows us to specify conditions on columns for the rows to be returned.  
@@ -91,6 +101,8 @@ SELECT column_name FROM TableName WHERE Conditions;
 ```ruby
 SELECT column_name FROM TableName WHERE Condition1 AND Condition2;
 ```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## ORDER BY
 
@@ -110,6 +122,8 @@ SELECT column_name FROM TableName ORDER BY column_name DESC
 SELECT column_name FROM TableName ORDER BY column_name1 DESC, column_name2 ASC
 ```  
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## LIMIT
 
 - The LIMIT command allows us to limit the number of rows returned for a Query.
@@ -118,7 +132,9 @@ __Example__
 
 ```ruby
 SELECT column_name FROM TableName LIMIT Numbers
-```
+```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## BETWEEN
 
@@ -126,6 +142,10 @@ SELECT column_name FROM TableName LIMIT Numbers
 - It similar to that of Value >= Low AND Value <= High.
 - We can also combine BETWEEN with the NOT Logical Operator (i.e.) Value NOT BETWEEN Low AND High.
 - It similar to that of Value < Low AND Value > High.
+
+__Note__
+
+- The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31    
 
 __Example__
 
@@ -137,9 +157,7 @@ SELECT column_name FROM TableName WHERE column_name BETWEEN Value1 AND Value2;
 SELECT column_name FROM TableName WHERE column_name NOT BETWEEN Value1 AND Value2;
 ```  
 
-__Note__
-
-- The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31  
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## IN
 
@@ -154,7 +172,9 @@ SELECT column_name FROM TableName WHERE column_name IN (Option1, Option2,..., Op
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name NOT IN (Option1, Option2,..., Option_n);
-```
+```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## LIKE and ILIKE
 
@@ -162,6 +182,10 @@ SELECT column_name FROM TableName WHERE column_name NOT IN (Option1, Option2,...
 - For Example, If we want to match against a general pattern in String (i.e.) Mails ending with '@gmail.com' and Names begin with 'A'
 - It also allows us to perform pattern matching against String data with the use of Wild Characters (i.e.) 
 - Percent(%) which matches any sequence of characters and UnderScore(_) which matches any single Character.   
+
+__Note__
+
+- We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive    
 
 __Example__
 
@@ -181,9 +205,7 @@ SELECT column_name FROM TableName WHERE column_name LIKE '%value%'
 SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
 ```
 
-__Note__
-
-- We can use LIKE for Case-Sensitive and ILIKE for Case-InSensitive  
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## Aggregation Function
 
