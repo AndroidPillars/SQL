@@ -3,6 +3,9 @@
 | S.No | Content |
 | --------	 | ------------ |
 | 1 | [Databases](README.md#databases) | 
+| 2 | [SQL](README.md#sql) |  
+| 3 | [SELECT](README.md#select) |  
+| 4 | [DISTINCT](README.md#distinct) |
 
 ## Databases
 
@@ -12,8 +15,7 @@
 
 ## SQL
 
-- Structured Query Language
-- SQL is the programming Language used to communicate with our Database.
+- SQL (Structured Query Language) is the programming Language used to communicate with our Database.
 
 ## SELECT
 
@@ -22,7 +24,7 @@
 - It will automatically query everything which increases the traffic b/w the Database Server and the Application which can slow down the retrieval of Results.
 - The Semicolon is to denote the end of a Query but it is not mandatory.
 
-__Example__
+__Example (General Syntax)__
 
 ```ruby
 SELECT * FROM TableName;
@@ -37,7 +39,7 @@ SELECT column_name FROM TableName;
 - DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
 - The DISTINCT of a Column works with or without parenthesis.
 
-__Example__
+__Example (General Syntax)__
 
 ```ruby
 SELECT DISTINCT column_name FROM TableName;
@@ -53,7 +55,7 @@ SELECT DISTINCT(column_name) FROM TableName;
 - We can apply COUNT on a specific column or just pass COUNT(*) to retrive the returned result.
 - The COUNT will works only with the parenthesis (i.e.) it is just a function which acts on something.
 
-__Example__
+__Example (General Syntax)__
 
 ```ruby
 SELECT COUNT(*) FROM TableName;
