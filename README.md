@@ -36,11 +36,13 @@
 - It will automatically query everything which increases the traffic b/w the Database Server and the Application which can slow down the retrieval of Results.
 - The Semicolon is to denote the end of a Query but it is not mandatory.
 
-__Example (General Syntax)__
+__Example 1 (Getting all the Columns)__
 
 ```ruby
 SELECT * FROM TableName;
 ```
+
+__Example 2 (Getting the Specific Columns)__
 
 ```ruby
 SELECT column_name FROM TableName; 
@@ -53,11 +55,13 @@ SELECT column_name FROM TableName;
 - DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
 - The DISTINCT of a Column works with or without parenthesis.
 
-__Example (General Syntax)__
+__Example 1 (General Syntax without parenthesis)__
 
 ```ruby
 SELECT DISTINCT column_name FROM TableName;
 ```
+
+__Example 2(General Syntax with parenthesis)__
 
 ```ruby
 SELECT DISTINCT(column_name) FROM TableName;
@@ -68,18 +72,22 @@ SELECT DISTINCT(column_name) FROM TableName;
 ## COUNT
 
 - The COUNT Function returns the number of input rows that matches a specific condition of a Query.
-- We can apply COUNT on a specific column or just pass COUNT(*) to retrive the returned result.
+- We can apply COUNT on a specific column (or) just pass COUNT(*) to retrive the returned result.
 - The COUNT will works only with the parenthesis (i.e.) it is just a function which acts on something.
 
-__Example (General Syntax)__
+__Example 1 (General Syntax)__
 
 ```ruby
 SELECT COUNT(*) FROM TableName;
 ```  
 
+__Example 2 (Getting Count of a Specific Column)__
+
 ```ruby
 SELECT COUNT(column_name) FROM TableName;
 ```  
+
+__Example 3 (Getting Count of a Specific Column with DISTINCT Keyword)__
 
 ```ruby
 SELECT COUNT(DISTINCT(column_name)) FROM TableName;
