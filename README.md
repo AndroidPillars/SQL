@@ -6,6 +6,14 @@
 | 2 | [SQL](README.md#sql) |  
 | 3 | [SELECT](README.md#select) |  
 | 4 | [DISTINCT](README.md#distinct) |
+| 5 | [Count](README.md#count) |  
+| 6 | [WHERE](README.md#where) |  
+| 7 | [ORDER BY](README.md#order-by) |  
+| 8 | [LIMIT](README.md#limit) |  
+| 9 | [BETWEEN](README.md#between) |  
+| 10 | [IN](README.md#in) |  
+| 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
+
 
 ## Databases
 
