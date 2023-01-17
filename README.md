@@ -100,11 +100,13 @@ SELECT COUNT(DISTINCT(column_name)) FROM TableName;
 - WHERE Statement allows us to specify conditions on columns for the rows to be returned.  
 - The Conditions are used to filter the rows returned from the SELECT Statement.
 
-__Example__
+__Example 1 (General Syntax)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE Conditions;
 ```
+
+__Example 2 (General Syntax with multiple Condition)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE Condition1 AND Condition2;
@@ -116,15 +118,19 @@ SELECT column_name FROM TableName WHERE Condition1 AND Condition2;
 
 - ORDER BY is used to sort rows based on a Column value in Ascending or Descending Order.
 
-__Example__
+__Example 1 (Sorting the rows in Ascending Order)__
 
 ```ruby
 SELECT column_name FROM TableName ORDER BY column_name ASC
 ```
 
+__Example 2 (Sorting the rows in Descending Order)__
+
 ```ruby
 SELECT column_name FROM TableName ORDER BY column_name DESC
 ```
+
+__Example 3 (Sorting the rows in Ascending and Descending Order for multiple Columns)__
 
 ```ruby
 SELECT column_name FROM TableName ORDER BY column_name1 DESC, column_name2 ASC
@@ -136,7 +142,7 @@ SELECT column_name FROM TableName ORDER BY column_name1 DESC, column_name2 ASC
 
 - The LIMIT command allows us to limit the number of rows returned for a Query.
 
-__Example__
+__Example 1 (General Syntax)__
 
 ```ruby
 SELECT column_name FROM TableName LIMIT Numbers
@@ -155,11 +161,13 @@ __Note__
 
 - The BETWEEN Operator can also be used with Dates but we need to format that in YYYY-MM-DD (i.e.) Date BETWEEN 2023-01-01 AND 2023-01-31    
 
-__Example__
+__Example 1 (General Synatx)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name BETWEEN Value1 AND Value2;
 ```
+
+__Example 2 (General Synatx using NOT)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name NOT BETWEEN Value1 AND Value2;
@@ -172,11 +180,13 @@ SELECT column_name FROM TableName WHERE column_name NOT BETWEEN Value1 AND Value
 - We can use the IN operator to create a conditions that checks to see if a Value is included in a List of Multiple Options.
 - For Example, If a user name shows up in a List of known Names (i.e.) Value IN (Option1, Option2,...,Option_n).
 
-__Example__
+__Example 1 (General Synatx)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name IN (Option1, Option2,..., Option_n);
 ```
+
+__Example 2 (General Synatx using NOT)__
 
 ```ruby
 SELECT column_name FROM TableName WHERE column_name NOT IN (Option1, Option2,..., Option_n);
