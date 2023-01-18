@@ -14,6 +14,9 @@
 | 10 | [IN](README.md#in) |  
 | 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
 | 12 | [Aggregation Function](README.md#aggregation-function) |  
+| 13 | [GROUP BY](README.md#group-by) |  
+| 14 | [HAVING](README.md#having) |  
+| 15 | [AS](README.md#as) |  
 
 
 ## Databases
@@ -309,30 +312,30 @@ __NOTE__
 - WHERE statement should not refer to the aggregation result.
 - If we want to sort results based on the aggregate function, make sure to reference the entire function (i.e.) for ORDER BY. 
 
-__Example 1 (General Syntax)__
+__Example 1 (General Syntax using GROUP BY)__
 
 ```ruby
 SELECT category_column, AGG(data_column) 
 FROM TableName 
-GROUP BY category_column
+GROUP BY category_column;
 ```  
 
-__Example 2 (General Syntax)__
+__Example 2 (GROUP BY with WHERE Condition)__
 
 ```ruby
 SELECT category_column, AGG(data_column) 
 FROM TableName 
-WHERE column_name 
-GROUP BY category_column
+WHERE condition
+GROUP BY category_column;
 ```
 
-__Example 3 (General Syntax)__
+__Example 3 (GROUP BY with ORDER BY)__
 
 ```ruby
 SELECT CategoryID, SUM(Price) FROM TableName
 GROUP BY CategoryID
 ORDER BY SUM(PRICE)
-LIMIT Number
+LIMIT Number;
 ```  
 
 ## HAVING
