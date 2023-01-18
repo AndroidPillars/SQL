@@ -765,6 +765,19 @@ column_name_five INTEGER CHECK (column_name_five > 0)
 );
 ```
 
+## Timestamps and Extract
+
+- Functions and Operations related to the specific Data Types (i.e.) TIMEZONE, NOW, TIMEOFDAY, CURRENT_TIME, CURRENT_DATE
+
+__NOTE__
+
+- This will be more useful when creating our own database and tables rather than querying a database.
+- TIME -> Contains only Time.
+- DATE -> Contains only Date.
+- TIMESTAMP -> Contains Date and Time.
+- TIMESTAMPTZ -> Contains Date, Time and Timezone.
+
+
 ## Need to Know
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
