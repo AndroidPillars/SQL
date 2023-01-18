@@ -309,15 +309,24 @@ __NOTE__
 - WHERE statement should not refer to the aggregation result.
 - If we want to sort results based on the aggregate function, make sure to reference the entire function (i.e.) for ORDER BY. 
 
-__Example__
+__Example 1 (General Syntax)__
 
 ```ruby
-SELECT category_column, AGG(data_column) FROM TableName GROUP BY category_column
+SELECT category_column, AGG(data_column) 
+FROM TableName 
+GROUP BY category_column
 ```  
 
+__Example 2 (General Syntax)__
+
 ```ruby
-SELECT category_column, AGG(data_column) FROM TableName WHERE column_name GROUP BY category_column
+SELECT category_column, AGG(data_column) 
+FROM TableName 
+WHERE column_name 
+GROUP BY category_column
 ```
+
+__Example 3 (General Syntax)__
 
 ```ruby
 SELECT CategoryID, SUM(Price) FROM TableName
@@ -331,7 +340,7 @@ LIMIT Number
 - The Havings clause allows us to filter after an aggregation has already taken place (i.e.) it comes after the GROUP BY call.
 - We cannot use WHERE to filter based on aggregate results, because those happened after a WHERE is executed.
 
-__Example__
+__Example 1 (General Syntax)__
 
 ```ruby
 SELECT category_column_1, category_column_2, AGG(data_column) 
@@ -341,20 +350,26 @@ HAVING AGG(data_column) > value
 ORDER BY category_column_1
 ```  
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## AS
 
 - As clause allows us to create "alias" for a column or result.
 - The AS Operator gets executed at the very end of a Query (i.e.) we cannot use inside the WHERE Operator.
 
-__Example__
+__Example 1 (General Syntax with Column Name)__
 
 ```ruby
 SELECT column_name as new_name FROM TableName
 ```
 
+__Example 2 (General Syntax with Aggregation Function)__
+
 ```ruby
 SELECT AGG(data_column) as new_name FROM TableName
 ```
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## JOIN
 
