@@ -6,7 +6,7 @@
 | 2 | [SQL](README.md#sql) |  
 | 3 | [SELECT](README.md#select) |  
 | 4 | [DISTINCT](README.md#distinct) |
-| 5 | [Count](README.md#count) |  
+| 5 | [COUNT](README.md#count) |  
 | 6 | [WHERE](README.md#where) |  
 | 7 | [ORDER BY](README.md#order-by) |  
 | 8 | [LIMIT](README.md#limit) |  
