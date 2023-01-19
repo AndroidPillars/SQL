@@ -772,11 +772,24 @@ column_name_five INTEGER CHECK (column_name_five > 0)
 __NOTE__
 
 - This will be more useful when creating our own database and tables rather than querying a database.
+- Careful considerations should be made when designing a Table for choosing a time data type.
+- Depending on the situation we may or may not need the full Level of TIMESTAMPTZ.
 - TIME -> Contains only Time.
 - DATE -> Contains only Date.
 - TIMESTAMP -> Contains Date and Time.
 - TIMESTAMPTZ -> Contains Date, Time and Timezone.
 
+__Example 1 (For Getting Current Date)__
+
+```ruby
+SELECT CURRENT_DATE
+```
+
+__Example 1 (For Getting Current TIME)__
+
+```ruby
+SELECT CURRENT_TIME
+```
 
 ## Need to Know
 
