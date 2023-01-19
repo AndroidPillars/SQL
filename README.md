@@ -1,7 +1,7 @@
 # Topics
 
 | S.No | Content | Status |
-| --------	 | ------------ | ------------ |
+| --------	 | ------------ | ------------ |  
 | 1 | [Databases](README.md#databases) | :heavy_check_mark: | 
 | 2 | [SQL](README.md#sql) |  
 | 3 | [SELECT](README.md#select) |  
