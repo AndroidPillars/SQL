@@ -17,6 +17,8 @@
 | 13 | [GROUP BY](README.md#group-by) |  
 | 14 | [HAVING](README.md#having) |  
 | 15 | [AS](README.md#as) |  
+| 16 | [JOIN](README.md#join) | 
+| 17 | [INNER JOIN](README.md#inner-join) | 
 
 
 ## Databases
@@ -377,7 +379,9 @@ SELECT AGG(data_column) as new_name FROM TableName
 ## JOIN
 
 - JOIN allows us to combine informations from multiple Table.
-- Different kinds of JOINs -> Inner JOINS, OUTER JOINS, FULL JOINS and UNION
+- Different kinds of JOINs -> Inner JOINS, OUTER JOINS, FULL JOINS and UNION.  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## INNER JOIN
 
@@ -387,13 +391,16 @@ __NOTE__
 
 - Default JOIN will be considered to be INNER JOIN
 
-__Example__
+__Example 1 (General Syntax)__
 
 ```ruby
 SELECT column_name 
 FROM TableNameOne
 INNER JOIN TableNameTwo on TableNameOne.column_matches = TableNameTwo.column_matches
 ```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 
 ## FULL OUTER JOIN
 
