@@ -12,7 +12,7 @@
 | 8 | [LIMIT](README.md#limit) | :heavy_check_mark: |   
 | 9 | [BETWEEN](README.md#between) | :heavy_check_mark: |   
 | 10 | [IN](README.md#in) | :heavy_check_mark: |   
-| 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
+| 11 | [LIKE and ILIKE](README.md#like-and-ilike) | :heavy_check_mark: |  
 | 12 | [Aggregation Function](README.md#aggregation-function) |  
 | 13 | [GROUP BY](README.md#group-by) |  
 | 14 | [HAVING](README.md#having) |  
