@@ -3,15 +3,15 @@
 | S.No | Content | Status |
 | --------	 | ------------ | ------------ |  
 | 1 | [Databases](README.md#databases) | :heavy_check_mark: | 
-| 2 | [SQL](README.md#sql) |  
-| 3 | [SELECT](README.md#select) |  
-| 4 | [DISTINCT](README.md#distinct) |
-| 5 | [COUNT](README.md#count) |  
-| 6 | [WHERE](README.md#where) |  
-| 7 | [ORDER BY](README.md#order-by) |  
-| 8 | [LIMIT](README.md#limit) |  
-| 9 | [BETWEEN](README.md#between) |  
-| 10 | [IN](README.md#in) |  
+| 2 | [SQL](README.md#sql) | :heavy_check_mark: |  
+| 3 | [SELECT](README.md#select) | :heavy_check_mark: |   
+| 4 | [DISTINCT](README.md#distinct) | :heavy_check_mark: | 
+| 5 | [COUNT](README.md#count) | :heavy_check_mark: |   
+| 6 | [WHERE](README.md#where) | :heavy_check_mark: |   
+| 7 | [ORDER BY](README.md#order-by) | :heavy_check_mark: |   
+| 8 | [LIMIT](README.md#limit) | :heavy_check_mark: |   
+| 9 | [BETWEEN](README.md#between) | :heavy_check_mark: |   
+| 10 | [IN](README.md#in) | :heavy_check_mark: |   
 | 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
 | 12 | [Aggregation Function](README.md#aggregation-function) |  
 | 13 | [GROUP BY](README.md#group-by) |  
