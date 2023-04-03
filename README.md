@@ -23,9 +23,10 @@
 
 ## Databases
 
-- Databases allows users to Store and Organize data.
+- Databases is a collection of data that allows users to Store and Organize data.
 - They are useful when dealing with large amount of data.
 - It is Mainly used by the Data Scientist, Web and Mobile App Developers.
+- Types - Relational (Table Format), Hierarchical, Network, NoSQL etc.
 
 :arrow_up: [__Back to Top__](README.md#topics)  
 
@@ -34,6 +35,17 @@
 - SQL (Structured Query Language) is the programming Language used to communicate with our Database.
 
 :arrow_up: [__Back to Top__](README.md#topics)  
+
+## DBMS
+
+- DBMS (Database Management System) is a software which is used to manage the database.
+- In other words, it is a software interface between database and end user that is responsible for authentication, concurrency, logging, backup, optimization etc.
+- Examples of RDBMS (Relational Database Management System)
+    - MySql – OpenSource
+    - SQL Server – Microsoft
+    - Oracle – IBM
+    - PostgreSQL - OpenSource
+- SQL -> DBMS <-> Database
 
 ## SELECT
 
