@@ -45,7 +45,15 @@
     - SQL Server – Microsoft
     - Oracle – IBM
     - PostgreSQL - OpenSource
-- SQL -> DBMS <-> Database
+- SQL -> DBMS <-> Database  
+
+## Comments
+
+/*
+Multiple Line Comment
+*/
+
+-- Single Line Comment
 
 ## SELECT
 
