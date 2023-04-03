@@ -49,11 +49,13 @@
 
 ## Comments
 
+```ruby  
 /*
 Multiple Line Comment
 */
 
 -- Single Line Comment
+```  
 
 ## SELECT
 
