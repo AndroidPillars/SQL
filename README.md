@@ -59,6 +59,19 @@ Comment
 -- Single Line Comment
 ```  
 
+## Data Types
+
+- Boolean (True or False)
+- Character (char - Fixed Length, varchar - Maximum Legth and text)
+- Numeric (Integer and Floating point Number)
+- Temporal (date, time, timestamp and interval)
+- UUID (Universally Unique Identifier) - which is essentially an algorithmically unique code in order to make sure you have an unique identifier for a Particular row.
+- Array - Stores an Array of strings, numbers, etc..
+- JSON
+- Hstore key-value pair
+- Special types such as Network Address and Geometric Data.
+
+
 ## SELECT
 
 - SELECT is the most common statement used to retrieve informations from a Table.
@@ -503,17 +516,6 @@ UNION
 SELECT column_name FROM TableNameTwo
 ```  
 
-## Data Types
-
-- Boolean (True or False)
-- Character (char, varchar and text)
-- Numeric (Integer and Floating point Number)
-- Temporal (date, time, timestamp and interval)
-- UUID (Universally Unique Identifier) - which is essentially an algorithmically unique code in order to make sure you have an unique identifier for a Particular row.
-- Array - Stores an Array of strings, numbers, etc..
-- JSON
-- Hstore key-value pair
-- Special types such as Network Address and Geometric Data.
 
 ## Primary Key
 
