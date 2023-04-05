@@ -139,7 +139,17 @@ DROP TABLE TableName; -- To Drop the Table
 
 ```ruby
 ALTER TABLE TableName
-ADD column_name_two DECIMAL(3,2); -- Adds a new column column_name_two to the TableName table
+ADD column_name DECIMAL(3,2); -- Adds a new column column_name to the TableName table
+```  
+
+```ruby
+ALTER TABLE TableName
+DROP COLUMN column_name; -- the column_name column from TableName table
+```  
+
+```ruby
+ALTER TABLE TableName
+DROP column_name; -- the column_name column from TableName table
 ```
 
 ## Primary Key
