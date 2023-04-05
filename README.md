@@ -140,6 +140,10 @@ id INT PRIMARY KEY,
 column_name_one VARCHAR(30),
 column_name_two DECIMAL(3,2)
 );
+```  
+
+```ruby
+DESCRIBE TableName; -- It Describes all the columns in the table.
 ```
 
 ## SELECT
