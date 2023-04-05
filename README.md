@@ -88,6 +88,30 @@ VARCHAR(10) CHARACTER SET utf8; -- Particular column is set to utf8
 
 ```ruby
 CREATE DATABASE TadmurFSM CHARACTER SET UTF8; -- Entire database is set to utf8
+```  
+
+## Database Queries
+
+- Some of the Queries for doing CRUD Operations in Database.
+
+```ruby
+CREATE DATABASE DatabaseName; -- To Create a New Database.
+```  
+
+```ruby
+SHOW DATABASES; (or) SHOW SCHEMAS; -- To show all the Databases.
+```
+
+```ruby
+DROP DATABASE DatabaseName; (or) DROP SCHEMA DatabaseName; -- To Delete a Database.
+```
+
+```ruby
+DROP DATABASE IF EXISTS DatabaseName; -- It prevents error(i.e.) Shows Warning if db not found.
+```
+
+```ruby
+USE DatabaseName; -- To Select the specific Database.
 ```
 
 ## SELECT
