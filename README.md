@@ -127,6 +127,19 @@ CREATE TABLE TableName(
 column_name_one TYPE column_constraint,
 column_name_two TYPE column_constraint
 );
+```  
+
+```ruby
+DESCRIBE TableName; -- It Describes all the columns in the table.
+```
+
+```ruby
+DROP TABLE TableName; -- To Drop the Table
+```
+
+```ruby
+ALTER TABLE TableName
+ADD column_name_two DECIMAL(3,2); -- Adds a new column column_name_two to the TableName table
 ```
 
 ## Primary Key
@@ -141,10 +154,6 @@ column_name_one VARCHAR(30),
 column_name_two DECIMAL(3,2)
 );
 ```  
-
-```ruby
-DESCRIBE TableName; -- It Describes all the columns in the table.
-```
 
 ## SELECT
 
