@@ -211,13 +211,13 @@ WHERE condition;
 __Example 1 (Getting all the Columns)__
 
 ```ruby
-SELECT * FROM TableName;
+SELECT * FROM TableName; -- To displays all rows and columns in the Table
 ```
 
 __Example 2 (Getting the Specific Column)__
 
 ```ruby
-SELECT column_name FROM TableName; 
+SELECT column_name FROM TableName; -- To displays all rows and columns in the Table
 ```  
 
 :arrow_up: [__Back to Top__](README.md#topics)  
