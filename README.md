@@ -112,6 +112,34 @@ DROP DATABASE IF EXISTS DatabaseName; -- It prevents error(i.e.) Shows Warning i
 
 ```ruby
 USE DatabaseName; -- To Select the specific Database.
+``` 
+
+## Table Queries
+
+## CREATE
+
+- To create a Table in SQL we need to use CREATE keyword and column syntax.
+
+__Example (General Syntax)__
+
+```ruby
+CREATE TABLE TableName(
+column_name_one TYPE column_constraint,
+column_name_two TYPE column_constraint
+);
+```
+
+## Primary Key
+
+- A Primary Key is a column or a group of columns used to identify a row uniquely and non-nullable in a Table.
+- Primary Key are also important since they allow us to decide which columns should be used for joining tables together.
+
+```ruby
+CREATE TABLE TableName(
+id INT PRIMARY KEY,
+column_name_one VARCHAR(30),
+column_name_two DECIMAL(3,2)
+);
 ```
 
 ## SELECT
@@ -558,12 +586,6 @@ UNION
 SELECT column_name FROM TableNameTwo
 ```  
 
-
-## Primary Key
-
-- A Primary Key is a column or a group of columns used to identify a row uniquely and non-nullable in a Table.
-- Primary Key are also important since they allow us to decide which columns should be used for joining tables together.
-
 ## Foreign Key
 
 - A Foreign Key is a field or Group of fields in a table that uniquely identifies a row in another table.
@@ -601,18 +623,6 @@ __NOTE__
 - CHECK Constraint ensures that all values in a column satisfy certain conditions.
 - Exclusion Constraint ensures that if any two rows are compared on the specified column or expression using the specified operator, not all of these comparsion will return TRUE.  
 
-## CREATE
-
-- To create a Table in SQL we need to use CREATE keyword and column syntax.
-
-__Example (General Syntax)__
-
-```ruby
-CREATE TABLE TableName(
-column_name_one TYPE column_constraint,
-column_name_two TYPE column_constraint
-);
-```
 
 ## SERAIL (Data Type)
 
