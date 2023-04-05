@@ -55,7 +55,9 @@ Multiple
 Line 
 Comment
 */
+```
 
+```ruby 
 -- Single Line Comment
 ```  
 
@@ -71,6 +73,22 @@ Comment
 - Hstore key-value pair
 - Special types such as Network Address and Geometric Data.
 
+## Character Data
+
+- CHAR -> For Example: If we set CHAR(5) it stores fixed length string of length 5. (Max 255 bytes)
+- VARCHAR -> For Example: If we set VARCHAR(5) it stores variable length string of length 5. (Max 65535 bytes).
+
+```ruby
+SHOW CHARACTER SET; -- It shows various character sets that are supported.
+```
+
+```ruby
+VARCHAR(10) CHARACTER SET utf8; -- Particular column is set to utf8
+```
+
+```ruby
+CREATE DATABASE TadmurFSM CHARACTER SET UTF8; -- Entire database is set to utf8
+```
 
 ## SELECT
 
