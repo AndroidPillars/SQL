@@ -165,6 +165,42 @@ column_name_two DECIMAL(3,2)
 );
 ```  
 
+## INSERT
+
+- Insert allows us to add Rows in a Table.
+- We can also insert values from Another Table.
+
+__NOTE__
+
+- The inserted row values must match up for the table including constraints.
+- SERIAL columns do not need to be provided a value (i.e.) since it's a sequence it will automatically update the next available integer for that row.
+
+__Example 1 __
+
+```ruby
+INSERT INTO TableName VALUES (value1, value2,...) -- To Insert a row.
+```
+
+```ruby
+INSERT INTO TableName VALUES (value1, value2,...), (value1, value2,...); -- To Insert more than one row.
+```
+
+```ruby
+INSERT INTO TableName(column1, column2,...) VALUES (value1, value2,...) -- To Insert a row.
+```
+
+```ruby
+INSERT INTO TableName(column1) VALUES (value1) -- To Insert a Specific Column.
+```
+
+```ruby
+INSERT INTO  TableName(column1, column2,...) 
+SELECT column1, column2,...
+FROM another_table 
+WHERE condition;
+```  
+
+
 ## SELECT
 
 - SELECT is the most common statement used to retrieve informations from a Table.
@@ -670,29 +706,6 @@ CREATE TABLE TableName(
 column_id INTEGER REFERENCES ReferedTableName(column_id),
 );
 ```
-
-## INSERT
-
-- Insert allows us to add Rows in a Table.
-- We can also insert values from Another Table.
-
-__NOTE__
-
-- The inserted row values must match up for the table including constraints.
-- SERIAL columns do not need to be provided a value (i.e.) since it's a sequence it will automatically update the next available integer for that row.
-
-__Example 1 __
-
-```ruby
-INSERT INTO TableName(column1, column2,...) VALUES (value1, value2,...)
-```
-
-```ruby
-INSERT INTO  TableName(column1, column2,...) 
-SELECT column1, column2,...
-FROM another_table 
-WHERE condition;
-```  
 
 ## UPDATE
 
