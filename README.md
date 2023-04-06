@@ -105,7 +105,7 @@ CREATE DATABASE TadmurFSM CHARACTER SET UTF8; -- Entire database is set to utf8
 
 ## Database Queries
 
-- Some of the Queries for doing CRUD Operations in Database.
+__Examples__
 
 ```ruby
 CREATE DATABASE DatabaseName; -- To Create a New Database.
@@ -120,7 +120,7 @@ DROP DATABASE DatabaseName; (or) DROP SCHEMA DatabaseName; -- To Delete a Databa
 ```
 
 ```ruby
-DROP DATABASE IF EXISTS DatabaseName; -- It prevents error(i.e.) Shows Warning if db not found.
+DROP DATABASE IF EXISTS DatabaseName; -- It prevents the error (i.e.) Shows a Warning if DB is not found.
 ```
 
 ```ruby
