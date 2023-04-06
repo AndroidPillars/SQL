@@ -128,6 +128,8 @@ DROP DATABASE IF EXISTS DatabaseName; -- It prevents the error (i.e.) Shows a Wa
 USE DatabaseName; -- To Select the specific Database.
 ``` 
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## Table Queries
 
 ## CREATE
