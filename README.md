@@ -200,7 +200,6 @@ FROM another_table
 WHERE condition;
 ```  
 
-
 ## SELECT
 
 - SELECT is the most common statement used to retrieve informations from a Table.
@@ -208,16 +207,16 @@ WHERE condition;
 - It will automatically query everything which increases the traffic b/w the Database Server and the Application which can slow down the retrieval of Results.
 - The Semicolon is to denote the end of a Query but it is not mandatory.
 
-__Example 1 (Getting all the Columns)__
+__Example__
 
 ```ruby
 SELECT * FROM TableName; -- To displays all rows and columns in the Table
 ```
 
-__Example 2 (Getting the Specific Column)__
+__Example__
 
 ```ruby
-SELECT column_name FROM TableName; -- To displays all rows and columns in the Table
+SELECT column_name FROM TableName; -- To displays specific columns in the Table
 ```  
 
 :arrow_up: [__Back to Top__](README.md#topics)  
