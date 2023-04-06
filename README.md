@@ -213,8 +213,6 @@ __Example__
 SELECT * FROM TableName; -- To displays all rows and columns in the Table
 ```
 
-__Example__
-
 ```ruby
 SELECT column_name FROM TableName; -- To displays specific columns in the Table
 ```  
