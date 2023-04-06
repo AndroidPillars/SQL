@@ -5,7 +5,8 @@
 | 1 | [Databases](README.md#databases) | :heavy_check_mark: | 
 | 2 | [SQL](README.md#sql) | :heavy_check_mark: |  
 | 3 | [DBMS](README.md#dbms) | :heavy_check_mark: |  
-| 4 | [SELECT](README.md#select) | :heavy_check_mark: |   
+| 4 | [Comment](README.md#comment) | :heavy_check_mark: |  
+| 5 | [SELECT](README.md#select) | :heavy_check_mark: |   
 | 4 | [DISTINCT](README.md#distinct) | :heavy_check_mark: | 
 | 5 | [COUNT](README.md#count) | :heavy_check_mark: |   
 | 6 | [WHERE](README.md#where) | :heavy_check_mark: |   
@@ -50,9 +51,10 @@
 
 :arrow_up: [__Back to Top__](README.md#topics)  
 
-## Comments
+## Comment
 
-- Comment makes the program easier to read and understand. 
+- A comment is an explanation or description of the source code of the program. 
+- Generally Comment makes the program easier to read and understand. 
 - These are the statements that are not executed by the compiler or an interpreter.
 - Type -> Single Line Comment, Multiple Line Comment.
 
