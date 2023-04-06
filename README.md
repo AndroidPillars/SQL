@@ -6,6 +6,7 @@
 | 2 | [SQL](README.md#sql) | :heavy_check_mark: |  
 | 3 | [DBMS](README.md#dbms) | :heavy_check_mark: |  
 | 4 | [Comment](README.md#comment) | :heavy_check_mark: |  
+| 7 | [Database Queries](README.md#database-queries) | :heavy_check_mark: |  
 | 5 | [SELECT](README.md#select) |
 | 4 | [DISTINCT](README.md#distinct) |
 | 5 | [COUNT](README.md#count) |
