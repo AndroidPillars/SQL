@@ -47,6 +47,8 @@
     - PostgreSQL - OpenSource
 - SQL -> DBMS <-> Database  
 
+:arrow_up: [__Back to Top__](README.md#topics)  
+
 ## Comments
 
 ```ruby  
