@@ -4,7 +4,8 @@
 | --------	 | ------------ | ------------ |  
 | 1 | [Databases](README.md#databases) | :heavy_check_mark: | 
 | 2 | [SQL](README.md#sql) | :heavy_check_mark: |  
-| 3 | [SELECT](README.md#select) | :heavy_check_mark: |   
+| 3 | [DBMS](README.md#dbms) | :heavy_check_mark: |  
+| 4 | [SELECT](README.md#select) | :heavy_check_mark: |   
 | 4 | [DISTINCT](README.md#distinct) | :heavy_check_mark: | 
 | 5 | [COUNT](README.md#count) | :heavy_check_mark: |   
 | 6 | [WHERE](README.md#where) | :heavy_check_mark: |   
