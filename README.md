@@ -34,6 +34,7 @@
 ## SQL
 
 - SQL (Structured Query Language) is the programming Language used to communicate with our Database.
+- It will be used to perform CRUD operations on the records stored in the database.
 
 :arrow_up: [__Back to Top__](README.md#topics)  
 
@@ -46,11 +47,20 @@
     - SQL Server – Microsoft
     - Oracle – IBM
     - PostgreSQL - OpenSource
-- SQL -> DBMS <-> Database  
 
 :arrow_up: [__Back to Top__](README.md#topics)  
 
 ## Comments
+
+- Comment makes the program easier to read and understand. 
+- These are the statements that are not executed by the compiler or an interpreter.
+- Type -> Single Line Comment, Multiple Line Comment.
+
+__Example__
+
+```ruby 
+-- Single Line Comment
+```  
 
 ```ruby  
 /*
@@ -58,11 +68,9 @@ Multiple
 Line 
 Comment
 */
-```
-
-```ruby 
--- Single Line Comment
 ```  
+
+:arrow_up: [__Back to Top__](README.md#topics)  
 
 ## Data Types
 
