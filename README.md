@@ -224,16 +224,14 @@ SELECT column_name FROM TableName; -- To displays specific columns in the Table
 - WHERE Statement allows us to specify conditions on columns for the rows to be returned.  
 - The Conditions are used to filter the rows returned from the SELECT Statement.
 
-__Example 1 (General Syntax)__
+__Example__
 
 ```ruby
-SELECT column_name FROM TableName WHERE Conditions;
+SELECT column_name FROM TableName WHERE Conditions; -- General Syntax
 ```
 
-__Example 2 (General Syntax with multiple Condition)__
-
 ```ruby
-SELECT column_name FROM TableName WHERE Condition1 AND Condition2;
+SELECT column_name FROM TableName WHERE Condition1 AND Condition2; -- We can use AND/OR to combine the relational operators.
 ```  
 
 :arrow_up: [__Back to Top__](README.md#topics)  
