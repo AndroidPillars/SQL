@@ -369,6 +369,20 @@ SELECT column_name FROM TableName WHERE column_name LIKE 'valu_'
 
 :arrow_up: [__Back to Top__](README.md#topics)  
 
+## The following can be used within the Condition
+
+| Condition | Description |
+| ------------ | ------------ |  
+| = | Equal |
+| > | Greater than |
+| < | Less than |
+|  >= |   Greater than or equal to |
+| <> | Not equal. Note: In some versions of SQL this operator may be written as != |
+| BETWEEN | Between a certain range |
+| LIKE | Search |
+| IN | To specify multiple possible values for a column |
+| NOT | Negation |
+
 ## DISTINCT
 
 - DISTINCT keyword will be used to return only the Distinct values in a Column (i.e.) Used to to avoid duplicate values in a column.
