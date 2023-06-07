@@ -44,7 +44,7 @@
 
 - DBMS (Database Management System) is a software which is used to manage the database.
 - In other words, it is a software interface between database and end user that is responsible for authentication, concurrency, logging, backup, optimization etc.
-- Examples of RDBMS (Relational Database Management System)
+- Some of the Database Management Softwares used for RDBMS (Relational Database Management System)
     - MySql – OpenSource
     - SQL Server – Microsoft
     - Oracle – IBM
