@@ -1,12 +1,12 @@
 # Topics
 
-| S.No | Content | Status |
-| --------	 | ------------ | ------------ |  
-| 1 | [Databases](README.md#databases) | :heavy_check_mark: | 
-| 2 | [SQL](README.md#sql) | :heavy_check_mark: |  
-| 3 | [DBMS](README.md#dbms) | :heavy_check_mark: |  
-| 4 | [Comment](README.md#comment) | :heavy_check_mark: |  
-| 7 | [Database Queries](README.md#database-queries) | :heavy_check_mark: |  
+| S.No | Content |
+| --------	 |
+| 1 | [Databases](README.md#databases) |
+| 2 | [SQL](README.md#sql) |
+| 3 | [DBMS](README.md#dbms) |
+| 4 | [Comment](README.md#comment) |
+| 7 | [Database Queries](README.md#database-queries) |
 | 5 | [SELECT](README.md#select) |
 | 4 | [DISTINCT](README.md#distinct) |
 | 5 | [COUNT](README.md#count) |
@@ -941,3 +941,9 @@ SELECT CURRENT_TIME
 
 - SQL supports comparsion Operators (i.e.) =,>,<,>=,<=,<>(or)!=
 - It also supports logical Operators (i.e.) AND, OR, NOT
+
+## References
+
+- https://www.youtube.com/watch?v=qBBXBZXKi0w (MySQL Installation - English)
+- https://www.youtube.com/watch?v=r5IyLq2k2Ps&t=5188s (Course - Tamil)
+- https://balanced-quince-db1.notion.site/SQL-7347f5956fe347f887b4132c716cd236 (Notes - English)
