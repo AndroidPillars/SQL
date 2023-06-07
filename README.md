@@ -1,27 +1,27 @@
 # Topics
 
-| S.No | Content |
-| --------	 |
-| 1 | [Databases](README.md#databases) |
-| 2 | [SQL](README.md#sql) |
-| 3 | [DBMS](README.md#dbms) |
-| 4 | [Comment](README.md#comment) |
-| 7 | [Database Queries](README.md#database-queries) |
-| 5 | [SELECT](README.md#select) |
-| 4 | [DISTINCT](README.md#distinct) |
-| 5 | [COUNT](README.md#count) |
-| 6 | [WHERE](README.md#where) |
-| 7 | [ORDER BY](README.md#order-by) |
-| 8 | [LIMIT](README.md#limit) |
-| 9 | [BETWEEN](README.md#between) |
-| 10 | [IN](README.md#in) |
-| 11 | [LIKE and ILIKE](README.md#like-and-ilike) |
-| 12 | [Aggregation Function](README.md#aggregation-function) |  
-| 13 | [GROUP BY](README.md#group-by) |  
-| 14 | [HAVING](README.md#having) |  
-| 15 | [AS](README.md#as) |  
-| 16 | [JOIN](README.md#join) | 
-| 17 | [INNER JOIN](README.md#inner-join) | 
+| S.No | Content |  
+| --------	 |  --------	 |  
+| 1 | [Databases](README.md#databases) |  
+| 2 | [SQL](README.md#sql) |  
+| 3 | [DBMS](README.md#dbms) |  
+| 4 | [Comment](README.md#comment) |  
+| 7 | [Database Queries](README.md#database-queries) |  
+| 5 | [SELECT](README.md#select) |  
+| 4 | [DISTINCT](README.md#distinct) |  
+| 5 | [COUNT](README.md#count) |  
+| 6 | [WHERE](README.md#where) |   
+| 7 | [ORDER BY](README.md#order-by) |  
+| 8 | [LIMIT](README.md#limit) |  
+| 9 | [BETWEEN](README.md#between) |  
+| 10 | [IN](README.md#in) |  
+| 11 | [LIKE and ILIKE](README.md#like-and-ilike) |  
+| 12 | [Aggregation Function](README.md#aggregation-function) |    
+| 13 | [GROUP BY](README.md#group-by) |    
+| 14 | [HAVING](README.md#having) |    
+| 15 | [AS](README.md#as) |    
+| 16 | [JOIN](README.md#join) |   
+| 17 | [INNER JOIN](README.md#inner-join) |   
 
 
 ## Databases
