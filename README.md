@@ -191,7 +191,7 @@ __NOTE__
 - The inserted row values must match up for the table including constraints.
 - SERIAL columns do not need to be provided a value (i.e.) since it's a sequence it will automatically update the next available integer for that row.
 
-__Example 1 __
+__Example (General Syntax)__
 
 ```ruby
 INSERT INTO TableName VALUES (value1, value2,...) -- To Insert a row.
